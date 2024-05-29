@@ -1,0 +1,8 @@
+.navlink{
+    padding:15px;
+
+}
+.navlink:hover{
+    color:rgba(112, 30, 47, 1);
+    font-weight: 400;
+}

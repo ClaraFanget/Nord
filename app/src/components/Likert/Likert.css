@@ -1,0 +1,23 @@
+.liLikert {
+    display: inline;
+    margin: 10px;
+}
+
+#olLikert {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.texte-selection p {
+    margin: 0;
+}
+
+@media screen and (max-width: 712px) {
+    .liLikert {
+        margin: 5px;
+    }
+}

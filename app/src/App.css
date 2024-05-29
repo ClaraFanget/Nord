@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0; /* Ensure no default margin */
+    padding: 0; /* Ensure no default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+html, body {
+    height: 100%; /* Make sure the body and html take up the full height */
+     margin: 0;
+}
+
+.navlink {
+    cursor: pointer;
+}
+.navbar{
+
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Ajoute une ombre de 2px de hauteur sous la barre de navigation */
+    background-color: white;
+}
+#navbarTelephone{
+     background-color: #f8f9fa;
+}
+
+#accueil{
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+}
+#telephone {
+    margin-top: 5px;
+    margin-left: auto;
+    width: 570px;
+}
+.photoNous{
+    width: 350px;
+}
+#textCarte {
+    font-size: xx-large;
+    color: rgba(112, 30, 47, 1);
+    margin-left: 10%;
+}
+#boutonsAccueil {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espace entre les boutons */
+  margin-top: 20px;
+}
+
+#boutonProjet, #testerMaquette {
+  padding: 10px 20px;
+  background-color: #F9F9F9; /* Couleur de fond pour rendre les boutons visibles */
+  border: 1px solid rgba(112, 30, 47, 1); /* Bordure des boutons */
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Supprime la décoration de lien pour le bouton */
+  color: rgba(112, 30, 47, 1); /* Couleur du texte */
+  font-size: 20px;
+}
+
+#testerMaquette:hover, #boutonProjet:hover {
+  background-color: rgba(112, 30, 47, 1); /* Couleur de fond au survol */
+  color: white;
+}
+
+#encadre {
+    border: rgba(112, 30, 47, 1) 3px solid;
+    padding: 15px;
+    max-width: 70vw;
+    margin: 4vh 5vw;
+    text-align: justify;
+}
+
+.encadre-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#GDP {
+    display: flex;
+    justify-content: center;
+}
+
+.itemGdp {
+    padding: 80px 30px 80px 30px;
+    border: 2px solid rgba(112, 30, 47, 1);
+    margin: 32px;
+    cursor: pointer;
+}
+
+.etatArt {
+    background-color: rgba(112, 30, 47, 1);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 0px;
+
+}
+.sousEtatArt{
+    background-color: rgb(150, 60, 78);
+    color: white;
+    padding: 0px;
+    text-align: center;
+    margin: 0px;
+    width: fit-content;
+}
+#gdp{
+    width: 100%;
+}
+
+#remonter {
+    position: fixed;
+    top: 80%;
+    left: 96%;
+    text-decoration: none;
+    color: rgba(112, 30, 47, 1);
+    font-size: 30px;
+}
+
+.sommaire {
+    text-decoration: none;
+    color: black;
+}
+
+.sommaire:hover {
+    color: rgba(112, 30, 47, 1);
+    font-weight: 600;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+#GDP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.switchText {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 50px;
+
+}
+
+.titreEch {
+    margin-right: 0px;
+}
+
+#testUtilisateur {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#likert {
+    margin: 40px;
+}
+
+.radio {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.icones-pouces {
+    display: none;
+}
+
+.container-itemtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:25px ;
+}
+
+.titre-panel {
+    cursor: pointer;
+}
+
+p {
+    margin: 3vh 5vw;
+    line-height: 2rem;
+    text-indent: 20px;
+}
+
+h2 {
+    margin: 3vh 7vw;
+}
+
+#sommaire {
+    line-height: 2rem;
+    margin-left: 5vw;
+}
+.legende{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+@media screen and (max-width: 1045px) {
+
+    .radio {
+        width: 7vmin;
+        height: 7vmin;
+        margin: 0;
+    }
+
+    .texte-selection {
+        display: none;
+        /* Cache ce bloc sur les petits écrans */
+    }
+
+    .texte-question {
+        font-size: 1.2em;
+        /* Ajuste la taille du texte */
+    }
+
+    #olLikert {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .choix-niveau {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 10px;
+    }
+
+    .icones-pouces {
+        display: block;
+        height: 30px;
+    }
+
+    #encadre {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1.4em;
+        margin: 5vw;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 7vw;
+    }
+
+    #sommaire {
+        font-size: 1.3em;
+        margin: 0 2vw;
+        text-align: left;
+    }
+
+    #carte {
+        height: 100vh;
+        width: 98vw;
+        object-fit: cover;
+    }
+}
+#scoreContainer{
+    display: flex;
+    justify-content: center;
+}
+#score{
+    padding: 10px;
+    color:rgba(112, 30, 47, 1) ;
+    border: 1px solid rgba(112, 30, 47, 1);
+}
+#score:hover{
+    cursor: pointer;
+    background-color:rgba(112, 30, 47, 1) ;
+    color: white;
+}
+.planVertContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video{
+    display: flex;
+    justify-content: center;
+}
+.planVertContentText{
+    text-indent: 30px;
+    width: 60%;
+}
+.graphique{
+    margin:30px;
+}
+.planVertImage{
+    margin-right: 25px;
+    margin-left: 40px;
+}
+.photoPerso{
+    text-align: center;
+}
+
+@media screen and (max-width: 735px) {
+    #remonter {
+        position: fixed;
+        top: 90%;
+        left: 93%;
+        padding: 10px;
+    }
+    .planVertImage {
+    display: none;
+  }
+}
+#planVertTitle{
+     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(0.25turn, rgba(112, 30, 47, 0.72), rgba(254, 251, 180, 0.72));
+    padding:10px;
+    text-align: center;
+    font-size: 40px;
+
+}
+#planVertContent{
+    padding: 30px;
+    line-height: 32px;
+    font-size: 16px;
+}
+#iconContainer {
+  position: absolute;
+  bottom: 0px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 2000;
+}
+
+#iconScroll {
+  font-size: 2rem; /* Adjust the size as needed */
+  color: #000; /* Adjust the color as needed */
+}
